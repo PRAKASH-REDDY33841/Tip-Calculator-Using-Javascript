@@ -1,0 +1,113 @@
+.tip-calculator-container {
+    background-color: #f9fbfe;
+    padding: 20px;
+}
+
+/* Image Responsive */
+.tip-calculator-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Heading */
+.tip-calculator-heading {
+    color: #264fa2;
+    font-family: "Roboto";
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* ✅ Inputs in one row */
+.inputs-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Each input block */
+.input-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Label */
+.input-label {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Field */
+.user-input {
+    height: 40px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cbd2d9;
+    border-radius: 4px;
+    padding-left: 12px;
+    outline: none;
+}
+
+/* Button */
+.calculate-tip-button {
+    background-color: #264fa2;
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Error Message */
+.error-message {
+    color: #cf1124;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* ✅ Tablet & Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .tip-calculator-container {
+        padding: 15px;
+    }
+
+    .tip-calculator-heading {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .inputs-row {
+        flex-direction: column;
+    }
+
+    .calculate-tip-button {
+        font-size: 16px;
+    }
+}
+
+/* ✅ Extra Small Devices */
+@media screen and (max-width: 480px) {
+    .tip-calculator-heading {
+        font-size: 26px;
+    }
+
+    .user-input {
+        height: 38px;
+    }
+
+    .calculate-tip-button {
+        padding: 12px;
+    }
+}
